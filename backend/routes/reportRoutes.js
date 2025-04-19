@@ -1,7 +1,8 @@
 const express = require('express');
+const { getDetailedReport } = require('../controllers/reportController'); // import the controller
 const router = express.Router();
-const { getDetailedReport } = require('../controllers/reportController');
 
+// Define the route for the detailed report
 router.get('/detailed', getDetailedReport);
 
 module.exports = router;
